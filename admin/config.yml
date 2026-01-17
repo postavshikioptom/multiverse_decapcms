@@ -1,0 +1,29 @@
+yaml
+   backend:
+     name: github
+     repo: postavshikioptom/multiverse_decapcms  # Твой repo
+     branch: main
+     site_domain: multiverse-decapcms.netlify.app  # Будущий URL Netlify (замени после deploy)
+
+   publish_mode: simple  # Или editorial_workflow для draft/review
+
+   media_folder: static/images/uploads  # Где хранить фото/видео
+   public_folder: /images/uploads  # Публичный путь для ссылок
+
+   collections:
+     - name: "posts"  # Имя коллекции
+       label: "Посты"  # UI-лейбл
+       folder: "content/posts"  # Папка для файлов постов
+       create: true  # Разрешить новые посты
+       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # Шаблон имени файла
+       extension: md  # Формат: Markdown
+       format: frontmatter  # Frontmatter для метаданных
+       fields:  # Поля в форме
+         - { label: "Заголовок", name: "title", widget: "string", required: true }
+         - { label: "Описание", name: "description", widget: "text" }
+         - { label: "Дата", name: "date", widget: "datetime", default: "{{now}}" }
+         - { label: "Фото/Видео", name: "media", widget: "image", required: false }  # Для embeds/файлов
+         - { label: "Содержимое", name: "body", widget: "markdown" }
+         - { label: "Целевой сайт", name: "target_site", widget: "select", options: ["maxmarshall", "mazzaro", "planes"] }  # Для multi-site: выбирай под-сайт
+       preview_path: "{{target_site}}/{{slug}}"  # Опциональный preview URL
+   
