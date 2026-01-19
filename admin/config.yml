@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: postavshikioptom/multiverse_decapcms
   branch: main
   site_domain: multiverse-decapcms.netlify.app
