@@ -26,8 +26,10 @@ yaml
          - { label: "Содержимое", name: "body", widget: "markdown" }
          - { label: "Целевой сайт", name: "target_site", widget: "select", options: ["maxmarshall", "mazzaro", "planes"] }  # Для multi-site: выбирай под-сайт
        preview_path: "{{target_site}}/{{slug}}"  # Опциональный preview URL
-   backend:
-      ...
-      base_url: https://api.netlify.com
-      auth_endpoint: auth
-    site_url: https://multiverse-decapcms.netlify.app  # Твой Netlify URL
+backend:
+  name: github
+  repo: postavshikioptom/multiverse_decapcms
+  branch: main
+  site_domain: multiverse-decapcms.netlify.app
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
