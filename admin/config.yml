@@ -16,10 +16,11 @@ collections:
     label: "Посты"
     folder: "content/posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{fields.slug}}"
     extension: md
     format: frontmatter
     fields:
+      - { label: "Slug", name: "slug", widget: "string", required: true, pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Только латинские буквы, цифры, дефисы"] }
       - { label: "Заголовок", name: "title", widget: "string", required: true }
       - { label: "Описание", name: "description", widget: "text" }
       - { label: "Дата", name: "date", widget: "datetime", default: "{{now}}" }
