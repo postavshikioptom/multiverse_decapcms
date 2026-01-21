@@ -21,7 +21,7 @@ collections:
     format: frontmatter
     fields:
       - { label: "Slug", name: "slug", widget: "string", required: true, pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Только латинские буквы, цифры, дефисы"] }
-      - { label: "Заголовок", name: "title", widget: "string", required: true }
+      - { label: "Заголовок", name: "title", widget: "string" }
       - { label: "Описание", name: "description", widget: "text" }
       - { label: "Дата", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Фото/Видео", name: "media", widget: "image", required: false }
