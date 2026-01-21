@@ -5,7 +5,7 @@ description: High-quality 3D model of a secure leather bank deposit bag with tam
 date: 2026-01-21
 target_site: maxmarshall
 media: https://img2.cgtrader.com/items/4669738/9b9f0a7e6c/large/leather-bank-deposit-bag-3d-model-low-poly-obj-fbx.jpg
-tags: 3d-model, bank-bag, security, leather, tamper-evident, cgtrader, pbr
+tags: 3d-model, bank-bag, security, leather, tamper-evident, cgtrader, pbr, stock
 ---
 
 # 3D Leather Bank Deposit Bag with Tamper-Evident Security Features
@@ -27,5 +27,6 @@ This is a low-poly, PBR-ready model with high-quality textures (Base Color, Roug
 Available formats include FBX, OBJ, GLTF, BLEND, and others. The model meets CGTrader's strict quality standards and is ready for use in professional projects.
 
 Priced affordably, it's an excellent asset for any 3D artist working on banking, retail, or security-themed scenes.
+
 
 #3dmodel #bankbag #security #leather #tamper-evident #cgtrader #pbr
